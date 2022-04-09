@@ -83,12 +83,12 @@ func main() {
 	movies = append(movies, Movie{ID: "2", Isbn: "456", Title: "Doremon", Director: &Director{Firstname: "Vjet", Lastname: "Nodejs"}})
 	movies = append(movies, Movie{ID: "3", Isbn: "789", Title: "Tom and jerry live acction", Director: &Director{Firstname: "Nguyen", Lastname: "Hoa"}})
 	movies = append(movies, Movie{ID: "4", Isbn: "101", Title: "Em la co gai anh ghet nhat", Director: &Director{Firstname: "Nguyen Hien", Lastname: "Vy"}})
-	// movies = append(movies, Movie{ID: "5", Isbn: "102", Title: "End Game", Director: &Director{Firstname: "Nguyen Tuong", Lastname: "Vy"}})
-	// movies = append(movies, Movie{ID: "6", Isbn: "103", Title: "Muon noi voi em anh la nguoi xau", Director: &Director{Firstname: "Nguyen Viet", Lastname: "Hoang"}})
-	// movies = append(movies, Movie{ID: "7", Isbn: "104", Title: "Nguoi yeu em", Director: &Director{Firstname: "Nguyen", Lastname: "Hoa"}})
-	// movies = append(movies, Movie{ID: "8", Isbn: "105", Title: "Nguoi ghet em", Director: &Director{Firstname: "John", Lastname: "Hunter"}})
-	// movies = append(movies, Movie{ID: "9", Isbn: "106", Title: "Nguoi bo em", Director: &Director{Firstname: "kevin", Lastname: "Hoa"}})
-	// movies = append(movies, Movie{ID: "10", Isbn: "107", Title: "Nguoi danh en", Director: &Director{Firstname: "Nguyen", Lastname: "Hoa"}})
+	movies = append(movies, Movie{ID: "5", Isbn: "102", Title: "End Game", Director: &Director{Firstname: "Nguyen Tuong", Lastname: "Vy"}})
+	movies = append(movies, Movie{ID: "6", Isbn: "103", Title: "Muon noi voi em anh la nguoi xau", Director: &Director{Firstname: "Nguyen Viet", Lastname: "Hoang"}})
+	movies = append(movies, Movie{ID: "7", Isbn: "104", Title: "Nguoi yeu em", Director: &Director{Firstname: "Nguyen", Lastname: "Hoa"}})
+	movies = append(movies, Movie{ID: "8", Isbn: "105", Title: "Nguoi ghet em", Director: &Director{Firstname: "John", Lastname: "Hunter"}})
+	movies = append(movies, Movie{ID: "9", Isbn: "106", Title: "Nguoi bo em", Director: &Director{Firstname: "kevin", Lastname: "Hoa"}})
+	movies = append(movies, Movie{ID: "10", Isbn: "107", Title: "Nguoi danh en", Director: &Director{Firstname: "Nguyen", Lastname: "Hoa"}})
 
 	//fuction handler
 	router.HandleFunc("/movies", getMovies).Methods("GET")
